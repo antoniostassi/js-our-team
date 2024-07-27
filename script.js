@@ -48,14 +48,14 @@ let staffUsers = [
     }
 ]
 
-let unorderedList = document.querySelector(div > ul);
+let unorderedList = document.getElementById("team-list")
 
 
 staffUsers.forEach(element => {
 
     console.log(element.name, element.lastname, element.role, element.image);
     
-    unorderedList.innerHTML += `<li>${element.name} ${element.lastname} ${element.role} ${element.image}</li>`;
+    unorderedList.innerHTML += `<li style="margin:10px 5px;">${element.name} ${element.lastname} ${element.role} ${element.image}</li>`;
     
 });
 
