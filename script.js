@@ -12,31 +12,31 @@
 let staffUsers = [
     {
         name: "Wayne",
-        surname: "Barnett",
+        lastname: "Barnett",
         role: "Founder & Ceo",
         image: "wayne-barnett-founder-ceo.jpg"
     },
     {
         name: "Angela",
-        surname: "Caroll",
+        lastname: "Caroll",
         role: "Chief Editor",
         image: "angela-caroll-chief-editor.jpg"
     },
     {
         name: "Walter",
-        surname: "Gordon",
+        lastname: "Gordon",
         role: "Office Manager",
         image: "walter-gordon-office-manager.jpg"
     },
     {
         name: "Angela",
-        surname: "Lopez",
+        lastname: "Lopez",
         role: "Social Media Manager",
         image: "angela-lopez-social-media-manager.jpg"
     },
     {
         name: "Scott",
-        surname: "Estrada",
+        lastname: "Estrada",
         role: "Developer",
         image: "scott-estrada-developer.jpg"
     },
@@ -47,3 +47,15 @@ let staffUsers = [
         image: "barbara-ramos-graphic-designer.jpg"
     }
 ]
+
+let unorderedList = document.querySelector(div > ul);
+
+
+staffUsers.forEach(element => {
+
+    console.log(element.name, element.lastname, element.role, element.image);
+    
+    unorderedList.innerHTML += `<li>${element.name} ${element.lastname} ${element.role} ${element.image}</li>`;
+    
+});
+
